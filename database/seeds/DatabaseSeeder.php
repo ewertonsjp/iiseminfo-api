@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use App\Event;
+use App\Selfie;
 
 class DatabaseSeeder extends Seeder
 {
@@ -17,5 +18,11 @@ class DatabaseSeeder extends Seeder
            'descricao' => 'Inovação, empreendedorismo e aceleração de ideias no semiárido.',
            'img' => 'http://9solucoes.com.br/seminfo/images/palestras/aislan1.jpg',
            'likes' => 0]);
+
+        Selfie::create(
+            ['img' => '?',
+            'depoimento' => 'so good',
+            'likes' => 0]
+        );   
     }
 }

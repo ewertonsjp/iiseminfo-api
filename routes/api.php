@@ -19,3 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/events', 'EventController@list');
 Route::post('/events/{id}/like', 'EventController@like');
+
+Route::get('/selfies', 'SelfieController@list');
