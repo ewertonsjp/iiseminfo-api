@@ -21,3 +21,5 @@ Route::get('/events', 'EventController@list');
 Route::post('/events/{id}/like', 'EventController@like');
 
 Route::get('/selfies', 'SelfieController@list');
+Route::post('/selfies', 'SelfieController@save');
+Route::post('/selfies/{id}/like', 'SelfieController@like');

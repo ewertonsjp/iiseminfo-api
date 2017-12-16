@@ -11,4 +11,16 @@ class SelfieController extends Controller {
         return response()->json(["selfies" => Selfie::all()], 200);
     }
 
+    public function save(Request $request) {
+        Selfie::create($request->all());
+        return response()->json([], 200);
+    }
+
+    public function like($id) {
+        $selfie = Selfie::find($id);
+        $selfie->likes += 1;
+        $selfie->save();
+        return response()->json([], 200);
+    }
+
 }
