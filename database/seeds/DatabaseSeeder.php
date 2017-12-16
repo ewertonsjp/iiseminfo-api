@@ -17,12 +17,6 @@ class DatabaseSeeder extends Seeder
            'autor' => 'Prof. Aislan Rafael - IFPI',
            'descricao' => 'Inovação, empreendedorismo e aceleração de ideias no semiárido.',
            'img' => 'http://9solucoes.com.br/seminfo/images/palestras/aislan1.jpg',
-           'likes' => 0]);
-
-        Selfie::create(
-            ['img' => '?',
-            'depoimento' => 'so good',
-            'likes' => 0]
-        );   
+           'likes' => 0]);         
     }
 }
