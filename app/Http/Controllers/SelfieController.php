@@ -8,7 +8,7 @@ use App\Selfie;
 class SelfieController extends Controller {
     
     public function list() {
-        return response()->json(["selfies" => Selfie::all()], 200);
+        return response()->json(["selfies" => Selfie::all()->sortByDesc('created_at')], 200);
     }
 
     public function save(Request $request) {
